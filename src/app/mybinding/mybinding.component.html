@@ -1,0 +1,61 @@
+
+
+
+<p>mybinding works!</p>
+
+<h2>Example 2</h2>
+<input type="text" [(ngModel)]="inputValue" name="input">
+{{inputValue}}
+<button type="button" class="btn btn-primary"
+tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+Simple demo
+</button>
+
+<h1 ngif="true">this is head</h1>
+
+<div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+      <input type="text"
+             placeholder="Datepicker"
+             class="form-control"
+             bsDatepicker>
+    </div>
+    <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+      <input type="text"
+             placeholder="Daterangepicker"
+             class="form-control"
+             bsDaterangepicker>
+    </div>
+  </div>
+  
+  
+<div class="col-md-4">
+<select (change)="getchanged($any($event.target).value)">
+<option value="TV">TV</option>
+<option value="MOBILE">MOBILE</option>
+<option value="WASHING">WASHING</option>
+</select>
+</div>
+
+tttt<div class="col-12" [ngSwitch]="changedValue">
+
+
+
+  <p *ngSwitchCase="'TV'">TV</p>
+  <p *ngSwitchCase="'MOBILE'">MOBILE</p>
+
+  <p *ngSwitchCase="'WASHING'">WASHING</p>
+
+
+
+</div>
+
+<tr *ngFor="let user of users">
+  <td>{{user.name}}</td>
+  <td>{{user.age}}</td>
+  <td>{{user.joinDate | date:'dd/MM/yyyy'}}</td>
+</tr>
+
+
+
+
