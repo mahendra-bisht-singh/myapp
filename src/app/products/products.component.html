@@ -1,1 +1,56 @@
-<p>products works!</p>
+<div class="card" style="width: 18rem;" style="float:left">
+
+
+    <div class="col-md-8">
+        <div class="row"></div>
+        <div class="col-md-4">
+            <h5 class="card-title">Laptop</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Laptop</h6>
+            <img src="../../assets/images/laptop.jpg" alt="laptop image" />
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a routerLink="laptop" class="card-link">Laptop</a>
+        </div>
+
+        <div class="col-md-4">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <img src="../../assets/images/mobile.jpg" alt="mobile image" />
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a routerLink="mobile" class="card-link">Mobile</a>
+        </div>
+    
+</div>
+    <div class="row">
+
+        <div class="col-md-8">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <img src="../../assets/images/washing.jpg" alt="washing image" />
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a routerLink="washing" class="card-link">Washing</a>
+
+
+
+        </div>
+    </div>
+
+
+
+
+Test<div class="bg-success" >
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+<input type="text" [(ngModel)]="parentPropertTest" />
+<app-home [childPropertTest]="parentPropertTest"></app-home>
+
+</div>
